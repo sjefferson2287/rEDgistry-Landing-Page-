@@ -287,7 +287,7 @@ img {
 
 .schools-container {
   width: 100%;
-
+  padding: 10px;
 }
 
 .schools-image {
@@ -303,6 +303,7 @@ img {
   box-shadow: -20px 10px 15px 5px rgba(0, 0, 0, 0.2);
   transition: all .4s;
   transform-style: preserve-3d;
+  margin: 0 auto;
 }
 
 .schools-image:hover .schools-img {
@@ -367,8 +368,8 @@ a h4:hover {
 }
 
 .section {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .section-sm {
@@ -378,6 +379,9 @@ a h4:hover {
 
 .section-title {
   margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .section-title-stu {
@@ -852,9 +856,8 @@ link:focus,
 
 /* banner feature */
 .feature-icon {
-  font-size: 50px;
+  font-size: 28px;
   color: #4600ff;
-  display: inline-block;
 }
 
 .feature-blocks {
@@ -1257,4 +1260,30 @@ link:focus,
 #parents li {
   margin-bottom: 10px;
   font-size: 16px;
+}
+
+/* Custom styles for the email input field */
+.email-input {
+  max-width: 300px; /* Adjust the value as needed */
+  width: calc(100% - 130px); /* Adjust the value to fit the button */
+  margin: 0 auto; /* Center the input field */
+}
+
+.input-group-append .btn {
+  width: 130px; /* Adjust the value as needed */
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+}
+
+/* Adjust padding for the text column in the Parents Section */
+#parents .col-xl-9 {
+  padding-left: 2rem; /* Equivalent to 'ps-4' */
+}
+
+/* If you need more padding, you can increase the value */
+#parents .col-xl-9 {
+  padding-left: 3rem; /* Equivalent to 'ps-5' */
 }

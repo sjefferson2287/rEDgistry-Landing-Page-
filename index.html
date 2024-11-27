@@ -124,16 +124,8 @@
   <div class="container-fluid p-0">
     <div class="row no-gutters">
       
-      <div class="col-xl-4 col-lg-5 align-self-end">
-        <div class="schools-container">
-          <div class="schools-image">
-            <img class="img-fluid w-100 schools-img" src="images/banner/schools-feature.png" alt="banner-feature">
-          </div>
-        </div>      
-      </div>
-
-      <div class="col-xl-8 col-lg-7">
-        
+      <!-- Content Column (Now First) -->
+      <div class="col-xl-9 col-lg-8"> <!-- Content column -->
         <div class="row feature-blocks bg-gray justify-content-between">
           <h2 class=" text-center">A Better Look at Students - A Better Look at the Schools.</h2>
 
@@ -157,8 +149,31 @@
           <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
             <i class="ti-user mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
             <h3 class="mb-xl-4 mb-lg-3 mb-4">Modernized College Readiness</h3>
-            <p>COMING SOON - Take Classes and  <a class="text-secondary">earn badges and certificates</a> Through the Platform’s Partnerships with <b>Khan Academy & Coursera!</b> </p>
+            <p>COMING SOON - Take Classes and <a class="text-secondary">earn badges and certificates</a> Through the Platform’s Partnerships with <b>Khan Academy & Coursera!</b></p>
+         
+                          
+                          
+              </div>
+            </div>
           </div>
+
+      <!-- Image Column (Now Second) -->
+      <div class="col-xl-3 col-lg-4 align-self-end"> 
+        <div class="schools-container">
+          <div class="schools-image">
+            <img class="img-fluid schools-img" 
+                 src="images/Mockups/Welcome-iphone.png" 
+                 alt="Welcome iPhone Mockup"
+                 style="max-width: 85%; height: auto;"> <!-- Increased from 75% to 85% -->
+          </div>
+        </div>      
+      </div>
+
+          <!-- Add new container for large image -->
+          <div class="container-fluid mt-5">
+            <div class="row">
+              <div class="col-12 d-flex justify-content-end pe-5"> <!-- Changed to justify-content-end and added pe-5 for right padding -->
+                <img src="images/Mockups/three-phones.png" alt="Three Phones Mockup" class="img-fluid" style="max-width: 35%; margin-right: 66%;"> <!-- Changed margin-right to margin-left -->
 
         </div>
       </div>
@@ -168,79 +183,74 @@
 </section>
 <!-- /banner-feature -->
 
+
+<!-- schools-feature -->
+
+<!-- Parents Section -->
+<section id="parents" class="section">
+  <div class="about-section">
+    <!-- Centered Title -->
+    <div class="row mb-4">
+      <div class="col-12 text-center">
+        <h2 class="section-title">rEd.gistry Helps Supportive Adults Monitor The Students</h2>
+      </div>
+    </div>
+
+    <!-- Content Row -->
+    <div class="row align-items-center">
+      <!-- Text Column -->
+      <div class="col-xl-6 col-lg-6">
+        <div class="feature-blocks">
+          <!-- Feature Block 1 -->
+          <div class="mb-4">
+            <i class="ti-user feature-icon"></i>
+            <h3>Profiles for Parents</h3>
+            <p>Parents can create profiles, invite students to join, or be invited by students to join.</p>
+          </div>
+          
+          <!-- Feature Block 2 -->
+          <div class="mb-4">
+            <i class="ti-direction-alt feature-icon"></i>
+            <h3>Keep Track of Your Student-Child's Actions</h3>
+            <p>Parents can receive posts from schools or any affiliate and can denote whether they are an alum of any school they follow.</p>
+          </div>
+          
+          <!-- Feature Block 3 -->
+          <div class="mb-4">
+            <i class="ti-reload feature-icon"></i>
+            <h3>Make the Changes You Need</h3>
+            <p>Parents may suggest revisions to any student profile to which it is linked (revisions must be accepted by the student).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Column -->
+      <div class="col-xl-6 col-lg-6 text-center">
+        <img src="images/Mockups/Parent-profile.png" alt="Parent Profile Mockup" class="img-fluid" style="max-width: 80%; height: auto;">
+      </div>
+    </div>
+  </div>
 <!-- CALL TO ACTION -->
 <section id="cta" class="section bg-tertiary">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-title text-white">Want to learn more about rEd.gistry?</h2>
-        <a href="https://workspace.google.com/resources/appointment-scheduling/" target="_blank" class="btn btn-four" data-toggle="modal" data-target="#loginModal">Book a meeting</a>
+        <h2 class="section-title text-white">REGISTER FOR THE BETA TEST NOW!</h2>
+        <form action="#" method="post" class="newsletter-form mt-3">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="input-group">
+                <input type="email" class="form-control me-2" placeholder="Enter your email" required>
+                <button class="btn btn-primary" type="submit">Join Waitlist</button>
+              </div>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </section>
 <!-- /CALL TO ACTION -->
-
-<!-- schools-feature -->
-
-<!-- About Section -->
-<section id="about" class="hero-section overlay bg-cover" data-background="images/banner/banner-1.jpg">
-  <!-- About section content -->
-</section>
-
-<!-- Parents Section -->
-<section id="parents" class="section">
-  <!-- Parents section content -->
-</section>
-
-<section id="students" class="bg-gray overflow-md-hidden">
-  <!-- Students section content -->
-   
-</section>
-
-<section id="join" class="section">
-  <!-- Join section content -->
-</section>
-
-<section id="about" class="section">
-  <div class="about-section">
-    <div class="row align-items-center">
-      <div class="col-md-6 order-2 order-md-1 mb-4 mb-md-0">
-        <img class="img-fluid w-100" src="images/about/about-us.png" alt="about image">
-      </div>
-
-      <div class="col-md-6 col-md-6-about-text order-1 order-md-2">
-        <h2 style="padding-top: 3%;" class="section-title">rEd.gistry works hard so parents don't have to.</h2>
-        <div>
-          <i class="ti-user mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-          <h3 class="mb-xl-4 mb-lg-3 mb-4">Profiles for parents</h3>
-          <p>Parents can create profiles, invite students to join or be invited by students to join</p>
-        </div>
-        <div>
-          <i class="ti-direction-alt mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-          <h3 class="mb-xl-4 mb-lg-3 mb-4">Keep track of your student-child's actions</h3>
-          <p>Parents can receive posts from schools, or any affiliate, and can denote whether they are an alum of any school they follow.</p>
-        </div>
-        <div>
-          <i class="ti-reload mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-          <h3 class="mb-xl-4 mb-lg-3 mb-4">Make the changes you need</h3>
-          <p>Parents may suggest revisions to any student profile to which it is linked (revisions must be accepted by the student).</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /about us -->
- 
-<footer id="contact">
-  <!-- newsletter -->
-  <div class="newsletter">
-    <h3 class="text-white">WANT TO JOIN THE BETA TEST OF THIS EXCITING NEW PRODUCT?</h3>
-    <!-- Newsletter content -->
-  </div>
-  <!-- Footer content -->
-</footer>
-
 <!-- jQuery -->
 <script src="plugins/jQuery/jquery.min.js"></script>
 <!-- Bootstrap JS -->
@@ -259,13 +269,3 @@
 
 <!-- Main Script -->
 <script src="js/script.js"></script>
-
-<script>
-  window.addEventListener('scroll', function () {
-    const header = document.querySelector('.header');
-    header.classList.toggle('scrolled', window.scrollY > 0);
-  });
-</script>
-
-</body>
-</html><section id="about" class="hero-section overlay bg-cover" data-background="images/banner/banner-1.jpg"><section id="about" class="hero-section overlay bg-cover" data-background="images/banner/banner-1.jpg"></section>
