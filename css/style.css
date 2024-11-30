@@ -370,6 +370,7 @@ a h4:hover {
 .section {
   padding-top: 40px;
   padding-bottom: 40px;
+  padding: calc(1648px * 0.05) 0;
 }
 
 .section-sm {
@@ -794,6 +795,18 @@ link:focus,
 
 .hero-section {
   padding: 250px 0 290px;
+  height: 1648px;
+  width: 100%;
+  position: relative;
+}
+
+.hero-slider {
+  padding: 20px 0;
+}
+
+.hero-slider-item {
+  padding: 20px;
+  padding: calc(1648px * 0.02);
 }
 
 .hero-slider .prevArrow,
@@ -1286,4 +1299,137 @@ link:focus,
 /* If you need more padding, you can increase the value */
 #parents .col-xl-9 {
   padding-left: 3rem; /* Equivalent to 'ps-5' */
+}
+
+/* Purple Divider */
+.purple-divider {
+  height: 2px; /* Thickness of the line */
+  background-color: #4600ff; /* Replace with your CTA background color */
+  width: 100%;
+  margin: 20px 0; /* Spacing above and below the divider */
+}
+
+/* Custom Class to Shift Image to the Right */
+.shift-right {
+  margin-left: 60px; /* Adjust as needed */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .shift-right {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shift-right {
+    margin-left: 0;
+  }
+}
+
+/* Optional: If using transform instead of margin */
+/*
+.shift-right {
+  transform: translateX(60px);
+}
+
+@media (max-width: 1200px) {
+  .shift-right {
+    transform: translateX(30px);
+  }
+
+@media (max-width: 768px) {
+  .shift-right {
+    transform: translateX(0);
+  }
+}
+*/
+
+/* Add to style.css */
+.container-fluid {
+  max-width: 1965px;
+  margin: 0 auto;
+}
+
+/* Maintain aspect ratio */
+@media screen and (max-width: 1965px) {
+  .hero-section {
+    height: calc(100vw * (1648/1965));
+  }
+}
+
+/* Zoom adjustment */
+@media screen and (min-width: 1965px) {
+  html {
+    zoom: 0.5;
+    -moz-transform: scale(0.5);
+    -moz-transform-origin: 0 0;
+  }
+}
+
+/* Force consistent spacing */
+.row {
+  margin: 0;
+}
+
+/* Add to style.css */
+.hero-section {
+  min-height: 60vh; /* Reduced from default */
+  padding: 60px 0; /* Reduced padding */
+}
+
+.hero-slider-item h1 {
+  font-size: 2.5rem; /* Smaller font size */
+  line-height: 1.4;
+  max-width: 800px; /* Limit width of text */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .hero-section {
+    min-height: 50vh;
+    padding: 40px 0;
+  }
+  
+  .hero-slider-item h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Add to style.css */
+.hero-section {
+  height: 60vh; /* Reduced height */
+  min-height: 400px; /* Minimum height */
+  max-height: 600px; /* Maximum height */
+  position: relative;
+  overflow: hidden; /* Prevent background overflow */
+}
+
+.hero-section .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-slider {
+  width: 100%;
+}
+
+.hero-slider-item {
+  padding: 20px 0;
+}
+
+.hero-slider-item h1 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  max-width: 800px;
+  margin: 0 auto;
 }
